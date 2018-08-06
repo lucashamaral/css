@@ -50,6 +50,7 @@
 	background-color: #b5f2b0;
 	border-radius: 50%;
 	border: 2px solid #333333;
+	box-shadow: inset -10px -8px 0 #88BD83;
 }
 
 .trunk {
@@ -62,7 +63,7 @@
 	z-index: 3;
 	border-top: none;
 	border-top-right-radius: 50px;
-	border-top-left-radius: 50px
+	border-top-left-radius: 50px;
 }
 
 .branch {
@@ -89,4 +90,5 @@
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	left: 17px;
+	box-shadow: inset -5px -5px 0 #a89e70;
 }
