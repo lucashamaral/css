@@ -1,0 +1,89 @@
+.container-position-cloud {
+	position: absolute;
+	animation: cloud-move 84s infinite;
+	animation-timing-function: ease-in-out;
+	z-index: -2;
+}
+
+.container-cloud {
+	margin-top: 50px;
+	margin-left: 50px;
+	position: relative;
+	height: 90px;
+	width: 190px;
+
+}
+
+.cloud {
+	background-color: #fff;
+	border-radius: 50px;
+	box-shadow: inset -18px -2px 0 #eaeaea;
+	position: absolute;
+	bottom: 0;
+	border: 2px solid #131313;
+	border-bottom: none;
+	border-right: none;
+	transform: rotate(45deg);
+}
+
+.c1 {
+	width: 40px;
+	height: 40px;
+	z-index: 5;
+}
+
+.c2 {
+	width: 60px;
+	height: 60px;
+	left: 25px;
+	z-index: 4;
+}
+
+.c3 {
+	width: 80px;
+	height: 80px;
+	left: 60px;
+	z-index: 3;
+}
+
+.c4 {
+	width: 60px;
+	height: 60px;
+	left: 120px;
+	z-index: 2;
+}
+
+.cloud-base {
+	width: 177px;
+	height: 20px;
+	background-color: #eaeaea;
+	position: absolute;
+	bottom: -2px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-bottom: 2px solid #131313;
+}
+
+.medium {
+	transform: scale(0.7);
+	margin-top: 180px;
+	animation: cloud-move 140s infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.small {
+	transform: scale(0.3);
+	margin-top: 90px;
+	animation: cloud-move 190s infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes cloud-move {
+	0% {
+		margin-left: -20%;
+	}
+
+	100% {
+		margin-left: 140%;
+	}
+}
