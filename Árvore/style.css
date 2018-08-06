@@ -1,0 +1,95 @@
+body {
+    background-color: #e2edff;
+}
+
+.container-position {
+    display: flex;
+    justify-content: center;
+}
+
+.container-tree {
+    margin-top: 40px;
+    display: block;
+    position: relative;
+    height: 378px;
+    width: 160px;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name: tree-float;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes tree-float {
+    0% {
+        margin-top: 40px;
+    }
+    50% {
+        margin-top: 60px;
+    }
+    100% {
+        margin-top: 40px;
+    }
+}
+
+.tree-itens {
+    position: absolute;
+}
+
+.leaves-one {
+    width: 100px;
+    height: 100px;
+    background-color: #b5f2b0;
+    border-radius: 50%;
+    border: 2px solid #333333;
+    border-bottom: none;
+    z-index: 2;
+    transform: rotate(-40deg);
+    right: 90px;
+}
+
+.leaves-two {
+    width: 150px;
+    height: 150px;
+    background-color: #b5f2b0;
+    border-radius: 50%;
+    border: 2px solid #333333;
+}
+
+.trunk {
+    height: 200px;
+    width: 6px;
+    border: 2px solid #333333;
+    background-color: #ab4926;
+    top: 114px;
+    left: 73px;
+    z-index: 3;
+    border-top: none;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px
+}
+
+.branch {
+    height: 40px;
+    width: 4px;
+    border: 2px solid #333333;
+    background-color: #ab4926;
+    top: 103px;
+    left: 92px;
+    transform: rotate(50deg);
+    border-top: none;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px
+}
+
+.floor {
+    width: 120px;
+    height: 60px;
+    background-color: #f1e5af;
+    border: 2px solid #333333;
+    bottom: 0px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    left: 17px;
+}
